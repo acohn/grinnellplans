@@ -31,18 +31,6 @@ if (isset($_GET['logout'])) {
 			height: auto;
 		}
 	</STYLE>
-<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript" charset="utf-8">
-google.load("jquery", "1.3.2");
-google.load("jqueryui", "1.7.2");
-</script>
-<script src="js/chroma-hash.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript" charset="utf-8">
-$(document).ready(function() {
-	$("#username").focus();
-	$("input:password").chromaHash({bars: 3, salt: "5bf999ac93430ed303cd0b56f976e289", minimum: 4});
-});
-</script>
 </head>
 <body bgcolor="#ffffff">       
 	<div class="left"><br><br>
