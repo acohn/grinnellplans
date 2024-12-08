@@ -1,16 +1,16 @@
 {
-	"id": "/",
-	"name": "Grinnell Plans",
-	"short_name": "Plans",
 	"start_url": "https://grinnellplans.com/",
+	"id": "/", // inherits start_url
+	"name": "Grinnell Plans",
+	"short_name": "Plans", // Tried [Plans] but that puts it at end of App list at least on Android due to alphebetization
 	"description": "The independent social network for Grinnellians.",
-	"categories": ["social"],
-	"display": "standalone",
-	"background_color": "#DA291C",
-	"launch_handler": {
-		"client_mode": "navigate_existing"
+	"categories": ["social"], // in theory, if this got scraped or submitted to an app store, we'd be categorized correctly
+	"display": "standalone", // this is the only non-browser tab mode supported in iOS/iPadOS, so we're using it everywhere for consistency
+	"background_color": "#DA291C", // defines the startup screen background and possibly nothing else
+	"launch_handler": { // not widely supported but seems like a good idea?
+		"client_mode": "navigate_existing" // intended to not spawn additional windows/apps/tabs
 	},
-	"shortcuts": [
+	"shortcuts": [ // on some OSes, these are additional options on long-press
 		{
 			"name": "Edit",
 			"url": "/edit.php",
@@ -41,7 +41,7 @@
 			"src": "/images/app-icons/app-icon.svg",
 			"sizes": "any",
 			"type": "image/svg+xml",
-			"purpose": "any maskable"
+			"purpose": "any maskable" // "maskable" required for Firefox to correctly crop icon even though is feels redundant
 		},
 		{
 			"src": "/images/app-icons/app-icon-192x192.png",
