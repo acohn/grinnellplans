@@ -25,12 +25,16 @@ if (isset($_GET['logout'])) {
 <head>
 	<title>GrinnellPlans</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="/images/app-icons/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/images/app-icons/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="manifest" href="/site.webmanifest" />
 	<style type="text/css">
 		img {
 			max-width: 100%;
 			height: auto;
 		}
-	</STYLE>
+	</style>
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript" charset="utf-8">
 google.load("jquery", "1.3.2");
@@ -49,7 +53,7 @@ $(document).ready(function() {
 	  <table cellpadding=0 width="100%">
 	  <tr>
 		<td colspan=2 align=center>
-			<img src="images/logo.png">
+			<img src="images/logo.svg">
 		</td>
 	  </tr>
 	  <tr class="boxes">

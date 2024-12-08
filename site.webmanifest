@@ -1,0 +1,75 @@
+{
+	"id": "/",
+	"name": "Grinnell Plans",
+	"short_name": "Plans",
+	"start_url": "https://grinnellplans.com/",
+	"description": "The independent social network for Grinnellians.",
+	"categories": ["social"],
+	"display": "standalone",
+	"background_color": "#DA291C",
+	"launch_handler": {
+		"client_mode": "navigate_existing"
+	},
+	"shortcuts": [
+		{
+			"name": "Edit",
+			"url": "/edit.php",
+			"description": "Edit your plan.",
+			"icons": [
+				{
+					"src": "/images/app-icons/shortcut-edit-96x96.png",
+					"sizes": "96x96",
+					"type": "image/png"
+				}
+			]
+		},
+		{
+			"name": "Quick Love",
+			"url": "/quicklove.php",
+			"description": "See who's given you love.",
+			"icons": [
+				{
+					"src": "/images/app-icons/shortcut-quicklove-96x96.png",
+					"sizes": "96x96",
+					"type": "image/png"
+				}
+			]
+		}
+	],
+	"icons": [
+		{
+			"src": "/images/app-icons/app-icon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/images/app-icons/app-icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/images/app-icons/app-icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "/images/screenshots/home-wide.png",
+			"sizes": "1280x768",
+			"form_factor": "wide",
+			"type": "image/png",
+			"label": "GrinnellPlans.com home page login screen"
+		},
+		{
+			"src": "/images/screenshots/home-narrow.png",
+			"sizes": "414x736",
+			"form_factor": "narrow",
+			"type": "image/png",
+			"label": "GrinnellPlans.com home page login screen"
+		}
+	]
+}
